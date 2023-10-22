@@ -1,0 +1,20 @@
+int add(int num1, int num2) {
+    int sum = num1;
+    int iter = num2;
+    while(iter != 0) {
+        sum = sum + 1;
+        iter = iter - 1;
+    }
+    return sum;
+}
+
+int main() {
+    int n1 = scan();
+    int n2 = scan();
+    int result = add(n1, n2 * 10);
+    println(result);
+    return result;
+
+    char test = "some string here";
+    println(test); // this will print test variable
+}
