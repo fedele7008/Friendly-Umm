@@ -11,7 +11,7 @@
 ## Optional
 
 * `doxygen` if you want to create documentation
-* `graphviz` if you want to create documentation with UML diagram
+* `graphviz` if you want to create documentation with UML diagram (requires `doxygen` too)
 
 ## How to configure
 
