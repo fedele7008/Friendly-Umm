@@ -24,3 +24,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE gmock gtest_main scanner)
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_TEST_OUTPUT_DIRECTORY}/${PROJECT_NAME}")
 
 add_dependencies(${PROJECT_NAME} scanner)
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/data DESTINATION "${CMAKE_TEST_OUTPUT_DIRECTORY}/${PROJECT_NAME}")
