@@ -3,11 +3,8 @@
 #include <gtest/gtest.h>
 #include <spdlog/spdlog.h>
 
-namespace
+TEST(ScannerTest, CreateInstance)
 {
-    TEST(ScannerTest, CreateInstance)
-    {
-        spdlog::set_level(spdlog::level::trace);
-        auto scanner = scanner::CreateScanner();
-    }
+    spdlog::set_level(spdlog::level::trace);
+    auto scanner = scanner::CreateScanner();
 }
