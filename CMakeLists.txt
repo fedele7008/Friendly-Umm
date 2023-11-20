@@ -12,6 +12,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH};${CMAKE_SOURCE_DIR}/cmake)
 set(BUILD_DOC ON CACHE BOOL "Build doxygen documentation (require Doxygen)")
 set(UML ON CACHE BOOL "Build doxygen documentation with UML diagram (require Doxygen and Graphviz)")
 
+set(LIBRARY_TYPE SHARED)
 set(OUTPUT_DIRECTORY artifact)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/lib)
@@ -32,7 +33,7 @@ if(BUILD_DOC)
         set(DRAW_UML YES)
     endif()
 
-    set(DOC_EXCLUDE_PATTERN "${CMAKE_BINARY_DIR} ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}")
+    set(DOC_EXCLUDE_PATTERN "*/build/* ${CMAKE_BINARY_DIR}/* ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/*")
 
     BuildDoxygen(${CMAKE_SOURCE_DIR}/doxygen/Doxyfile.in
     DEST_DIR              ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}
