@@ -1,6 +1,7 @@
 # Project specific
 **/*build
 **/*artifact
+**/*coverage
 
 # IDEA Ignores
 *.iml
