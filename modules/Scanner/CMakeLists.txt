@@ -31,6 +31,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/in
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Werror)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
-target_link_libraries(${PROJECT_NAME} PUBLIC fmt spdlog)
+target_link_libraries(${PROJECT_NAME} PUBLIC fmt spdlog symbol-table parser)
+
+add_dependencies(${PROJECT_NAME} symbol-table parser)
 
 add_subdirectory(test)

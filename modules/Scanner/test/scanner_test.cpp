@@ -1,10 +1,1 @@
-#include "scanner.h"
-
-#include <gtest/gtest.h>
-#include <spdlog/spdlog.h>
-
-TEST(ScannerTest, CreateInstance)
-{
-    spdlog::set_level(spdlog::level::trace);
-    auto scanner = scanner::CreateScanner();
-}
+#include "scanner.h"#include <gtest/gtest.h>#include <spdlog/spdlog.h>#include <memory>TEST(ScannerTest, CreateInstance){    spdlog::set_level(spdlog::level::trace);    auto scanner = std::shared_ptr<scanner::Scanner>(scanner::CreateScanner());}
