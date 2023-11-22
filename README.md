@@ -1,7 +1,7 @@
 # Friendly Umm...
 
 This project is Toy project in C++ that compiles C like custom language called friendly-Umm language into
-(umjunsik-lang)[https://github.com/rycont/umjunsik-lang], that is one of (esoteric programming language)[https://en.wikipedia.org/wiki/Esoteric_programming_language].
+[umjunsik-lang](https://github.com/rycont/umjunsik-lang), that is one of [esoteric programming language](https://en.wikipedia.org/wiki/Esoteric_programming_language).
 
 ## Requirements
 
