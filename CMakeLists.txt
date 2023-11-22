@@ -12,7 +12,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH};${CMAKE_SOURCE_DIR}/cmake)
 set(BUILD_DOC ON CACHE BOOL "Build doxygen documentation (require Doxygen)")
 set(UML ON CACHE BOOL "Build doxygen documentation with UML diagram (require Doxygen and Graphviz)")
 
-set(LIBRARY_TYPE SHARED)
+set(LIBRARY_TYPE STATIC)
 set(OUTPUT_DIRECTORY artifact)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/lib)
