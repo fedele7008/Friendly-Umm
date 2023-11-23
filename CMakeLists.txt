@@ -21,6 +21,7 @@ set(CMAKE_TEST_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/test)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/bin)
 
 add_subdirectory(apps/FriendlyUmmCompiler)
+add_subdirectory(modules/Common)
 add_subdirectory(modules/CodeGenerator)
 add_subdirectory(modules/Parser)
 add_subdirectory(modules/Scanner)

@@ -5,7 +5,7 @@
 using scanner::Scanner;
 
 Scanner::Scanner() {
-    spdlog::trace("Scanner instantiated");
+    spdlog::trace("Scanner created");
 }
 
 Scanner::~Scanner() {
