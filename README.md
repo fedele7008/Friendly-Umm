@@ -21,7 +21,7 @@ This project is Toy project in C++ that compiles C like custom language called f
 Run `cmake -B build` from project root directory to generate build directory
 
 * If you also want to create documentation, run `cmake -B build -D BUILD_DOC=ON`
-* If you also want to create documentation with UML diagram, run `cmake -B build -D BUILD_DOC=ON -D UML=ON`s
+* If you also want to create documentation with UML diagram, run `cmake -B build -D BUILD_DOC=ON -D UML=ON`
 
 Then run `cmake --build build` to compile the project
 
