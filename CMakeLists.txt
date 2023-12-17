@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.11)
 
+set(CMAKE_CXX_COMPILER clang++)
+
 project(
     friendly-umm
     VERSION 0.1
@@ -22,6 +24,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/${OUTPUT_DIRECTORY}/bin)
 
 add_subdirectory(apps/FriendlyUmmCompiler)
 add_subdirectory(modules/Common)
+add_subdirectory(modules/LogManager)
 add_subdirectory(modules/CodeGenerator)
 add_subdirectory(modules/Parser)
 add_subdirectory(modules/Scanner)
