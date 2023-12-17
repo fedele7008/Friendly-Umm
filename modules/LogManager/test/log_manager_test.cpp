@@ -1,0 +1,1 @@
+#include "log_manager.h"#include <gtest/gtest.h>#include <memory>namespace {TEST(LogManagerTest, test_log_manager) {    ASSERT_TRUE(true);}} // namespace

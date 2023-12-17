@@ -9,6 +9,6 @@ file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})
 
-target_link_libraries(${PROJECT_NAME} PUBLIC common scanner parser code-generator symbol-table)
+target_link_libraries(${PROJECT_NAME} PUBLIC common scanner parser code-generator symbol-table log-manager)
 
-add_dependencies(${PROJECT_NAME} common scanner parser code-generator symbol-table)
+add_dependencies(${PROJECT_NAME} common scanner parser code-generator symbol-table log-manager)

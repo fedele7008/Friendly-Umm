@@ -6,10 +6,13 @@ This project is Toy project in C++ that compiles C like custom language called f
 ## Requirements
 
 * `cmake` with version higher than 3.11
-* `g++` or any other c++ compiler
+* `clang++` with version 17.0.6
 * `make` or any other build tool (e.g. Ninja)
 * `git`
 * `python3` (needed for GTEST)
+
+Note that clang++ is must for Mac users due to compatibility of mac's default c++ compiler.
+For more information check [this](modules/LogManager/README.md)
 
 ## Optional
 
