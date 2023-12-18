@@ -80,21 +80,25 @@ namespace service {
         static LogManager &getInstance() noexcept;
 
         /**
-         * Initializes the logger.
+         * Initializes the log manager that is singleton throughout the program.
          * @brief Initializes the logger.
+         * @exception std::runtime_error If the logger is already initialized.
          * @param logPath The path to the log file.
          */
         void initialize(const string &name, const optional<path> &logPath = {});
 
         /**
-         * Un-initializes the logger.
+         * Un-initializes the log manager instance, uninitialize the log manager
+         * at the end of program or end of each test cases.
+         * @exception std::runtime_error If the logger is not initialized.
          * @brief Un-initializes the logger.
          */
         void uninitialize();
 
         /**
-         * Gets the logger.
+         * Gets the logger instance.
          * @brief Gets the logger.
+         * @exception std::runtime_error If the logger is not initialized.
          * @return The logger.
          */
         shared_ptr<logger> getLogger();
