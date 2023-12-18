@@ -29,7 +29,7 @@ namespace service {
         sinks.push_back(consoleSink);
 
         if (useFileSink) {
-            auto fileSink = std::make_shared<basic_file_sink_mt>(logPath.value().relative_path(), true);
+            auto fileSink = std::make_shared<basic_file_sink_mt>(logPath.value(), true);
             fileSink->set_level(spdlog::level::trace);
             sinks.push_back(fileSink);
         }
