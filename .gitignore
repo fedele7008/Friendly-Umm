@@ -2,6 +2,7 @@
 **/*build
 **/*artifact
 **/*coverage
+**/*.profraw
 
 # IDEA Ignores
 *.iml
